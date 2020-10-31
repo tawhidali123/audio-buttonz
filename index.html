@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Buttons</title>
+    <style>
+        .animal{
+            display: inline-block;
+            padding: 10px;
+            width: 100px;
+            height: 50px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    <button type="button">Play</button>
+    <div class="animal lion">Lion</div>
+    <div class="animal bear">Bear</div>
+    <div class="animal dog">Dog</div>
 
-    <script>
-        const button = document.querySelector('button');
-
-        const dog = new Audio('./sounds/bark3.mp3');
-
-        button.addEventListener('click', () => {
-            console.log(dog.duration)
-            dog.play()
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
